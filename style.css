@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --background-color:hsl(0, 100%, 74%);
+    --button-color:hsl(154, 59%, 51%);
+    --text-color: hsl(246, 25%, 77%);
+    --btn-color:hsl(248, 32%, 49%);
+    --darkblue:hsl(249, 10%, 26%);
+}
+html{
+    font-family: 'Poppins';
+}
+body{
+    background-image: url(images/bg-intro-mobile.png);
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-color: var(--background-color);
+}
+.text{
+    margin-top: 80px;
+}
+h1{
+    color: white;
+    text-align: center;
+}
+h1 span{
+    display: block;
+}
+.sub-text{
+    color: rgba(255, 255, 255, 0.795);
+    text-align: center;
+    margin-top: 20px;
+    padding: 0 10%;
+}
+button{
+    border: none;
+    font-family: 'Poppins';
+    cursor: pointer;
+    font-weight: 700;
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    padding-top: 50px;
+    margin: auto;
+    margin-bottom: 80px;
+    text-align: center;
+}
+form{
+    background-color: white;
+    border-radius: 15px;
+    margin-top: 30px;
+    padding: 25px;
+    box-shadow: 0px 7px 0px 0px rgba(43, 41, 41, 0.377);
+}
+input{
+    padding: 15px;
+    width: 100%;
+    margin-bottom: 25px;
+    font-family: 'Poppins';
+    font-weight: 700;
+}
+form small span a{
+    color: var(--background-color);
+    text-decoration: none;    
+}
+.try{
+    background-color: var(--btn-color);
+    color: white;
+    padding: 20px 50px;
+    border-radius: 15px;
+    line-height: 1.6em;
+    box-shadow: 0px 7px 0px 0px rgba(43, 41, 41, 0.377);
+}
+.try span{
+    color: var(--text-color);
+    display: block;
+    font-weight: 500;
+}
+.claim{
+    color: white;
+    width: 100%;
+    padding: 15px 0px;
+    border-radius: 7px;
+    background-color: var(--button-color);
+    margin-bottom: 20px;
+    font-size: 1.1em;
+    box-shadow: 0px 5px 0px 0px hsl(156, 91%, 40%);
+}
+.claim:hover{
+    opacity: 0.8;
+}
+@media screen and (min-width: 790px) {
+    body{
+        background-image: url(images/bg-intro-desktop.png);
+    }
+    main{
+        display: flex;
+        flex-direction: row;
+        gap: 2px;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 6%;
+    }
+    .text{
+        margin-top: unset;
+        margin-right: 20px;
+    }
+    .form{
+        margin-bottom: unset;
+    }
+    .try span{
+        display: inline;
+    }
+    h1, .sub-text{
+        text-align: left;
+        padding: unset;
+    }
+}
